@@ -1,0 +1,41 @@
+.flexbox-parent{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content:space-around;
+    text-align: center;
+}
+.flexbox-child1{
+    flex: 0 0 auto;
+    width: 25%;
+    flex-direction: column;
+
+}
+.flexbox-child2{
+    flex: 0 0 auto;
+    width: 25%;
+    flex-direction: column;
+
+}
+.flexbox-child3{
+    flex: 0 0 auto;
+    width: 25%;
+    flex-direction: column;
+    text-overflow: ellipsis;
+}
+.flexbox-child4{
+    flex: 0 0 auto;
+    width: 25%;
+    flex-direction: column;
+}
+.text-center{
+    text-align: center;
+}
+.up-flexbox-child{
+    text-align: center;
+    width:50%;
+}
+.down-flexbox-child{
+    text-align: center;
+    word-wrap: break-word;
+}

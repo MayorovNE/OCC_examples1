@@ -1,0 +1,29 @@
+.style1{
+    align-items: center;
+    text-align: center;
+  }
+.style5{
+    font-size: 20px;
+    text-align: center;
+  }
+.class1{
+  text-align: center;
+}
+.class2{
+  display: flex;
+  float: 3;
+  flex-direction: column;
+}
+.class3{
+  text-align: left;
+  display: flex;
+  flex:1;
+  align-self: flex-start;
+}
+.class4{
+  display: flex;
+}
+.class4{
+  text-align: left;
+  align-items: left;
+}

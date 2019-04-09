@@ -1,0 +1,46 @@
+<div class="style1"><button (click)="goNavigation()"><span class="style5">On start page</span></button></div>
+<div class="menu">
+    <div class="frame1">
+        <p class="p1">Vector 2D</p>
+        <div class="menu1">
+            <div class="frame3">
+                <span  class="p1">vector1</span>
+                <input type="text" #inputElement1  pattern="^[ 0-9]+$" name="num1" value=0>
+                <input type="string" #inputElement2 pattern="^[ 0-9]+$" name="num2" value=0>
+            </div>
+            <div class="frame3">
+                <span class="p1">vector2</span>
+                <input type="string" #inputElement3 pattern="^[ 0-9]+$" name="num3" value=0>
+                <input type="string" #inputElement4 pattern="^[ 0-9]+$" name="num4" value=0>
+            </div>
+            <div class="button1">
+                <button (click)="result2d()" >OK</button>
+            </div>
+        </div>
+        <p class ="p1">Result:</p>
+        <div><p style="margin:0;display:inline">Scalar multiplication:</p><span style="margin:0;display:inline" #spanElement1 >{{_result}}</span></div><div><p style="margin:0;display:inline"> Addition: (</p><span style="margin:0;display:inline" #spanElement3>{{_additionX}}</span><p style="margin:0;display:inline">,</p><span style="margin:0;display:inline" #spanElement5>{{_additionY}}</span><p style="margin:0;display:inline">)</p></div>
+    </div>
+    <div class="frame2">
+        <p class="p1">Vector 3D</p>
+        <div class="menu">
+            <div class="frame3">
+                <span class="p1">vector1</span>
+                <input  type="string" #inputElement5 pattern="^[ 0-9]+$" name="num5" value=0>
+                <input  type="string" #inputElement6 pattern="^[ 0-9]+$" name="num6" value=0>
+                <input  type="string" #inputElement7 pattern="^[ 0-9]+$" name="num7" value=0>
+            </div>
+            <div class="frame3">
+                <span class="p1">vector2</span>
+                <input type="string" #inputElement8 pattern="^[ 0-9]+$" name="num8" value=0>
+                <input type="string" #inputElement9 pattern="^[ 0-9]+$" name="num9" value=0>
+                <input type="string" #inputElement10 pattern="^[ 0-9]+$" name="num10" value=0>
+            </div>
+            <div class="button1">
+                <button (click)="result3d()" >OK</button>
+            </div>
+        </div>
+        <p class ="p1">Result:</p><br>
+        <div><p style="margin:0;display:inline">Scalar multiplication:</p><span style="margin:0;display:inline" #spanElement2 >{{_result1}}</span></div><div><p style="margin:0;display:inline"> Addition: (</p><span style="margin:0;display:inline" #spanElement4>{{_additionX1}}</span><p style="margin:0;display:inline">,</p><span style="margin:0;display:inline" #spanElement6>{{_additionY1}}</span><p style="margin:0;display:inline">,</p><span style="margin:0;display:inline" #spanElement7>{{_additionZ1}}</span><p style="margin:0;display:inline">)</p>
+    </div>
+</div>
+</div>

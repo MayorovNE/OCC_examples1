@@ -1,0 +1,48 @@
+<div class="flexbox-parent">
+    <div class="flexbox-child1">
+        <div>
+            <input class="up-flexbox-child" type="number" placeholder = "id" [(ngModel)] ="_inputID"/>
+        </div>   
+        <div class="down-flexbox-child">
+            <span>
+                {{_inputID}}
+            </span>
+        </div>
+    </div>
+    <div class="flexbox-child2">
+        <div>
+            <input class="up-flexbox-child" type="string" placeholder="name" [(ngModel)] ="_inputNAME"/>
+        </div>
+        <div class="down-flexbox-child">
+            <span>
+                {{_inputNAME}}
+            </span>
+        </div>
+    </div>
+    <div class="flexbox-child3">
+        <div>
+            <input class="up-flexbox-child" type="string" placeholder="description" [(ngModel)] ="_inputDESCRIPTION"/>
+        </div>
+        <div class="down-flexbox-child">
+            <span>
+                {{_inputDESCRIPTION}}
+            </span>
+        </div>
+    </div>
+    <div class="flexbox-child4">
+        <div>
+            <input class="up-flexbox-child" type="number" placeholder="price" [(ngModel)] ="_inputPRICE"/>
+        </div>
+        <div class="down-flexbox-child">
+            <span>
+                {{_inputPRICE}}
+            </span>
+        </div>
+    </div>
+</div>
+<div class="text-center">
+    <button (click)="addItem(_inputID, _inputNAME, _inputDESCRIPTION, _inputPRICE)" (click)="DropHintChange(_accept)">
+        Add
+    </button>
+</div>
+<DropOutHintTransform (DropHintChange)="DropHint($event)"></DropOutHintTransform>

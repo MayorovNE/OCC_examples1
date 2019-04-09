@@ -1,0 +1,13 @@
+<div class="style1"><button (click)="goNavigation()"><span class="style5">On start page</span></button></div>
+<div class="style3">
+    <div class="style2">
+        <button (click)="minus()" ><span class="style5">-1</span></button>
+        <button (click)="obnulenie()"><span class="style5">0</span></button>
+        <button (click)="slojenie()"><span class="style5">+1</span></button><br>
+    </div>
+    <div class="style2">
+        <span >score:<span #spanElement [ngClass]="{'color_red': koy==0, 'color_blue': koy==1, 'color_green': koy==2}">{{score}}</span></span>
+            <input class="style4" type="number" #inputElement size="3" name="num1" >
+        <button (click)="zamena()"><span class="style5">OK</span></button>
+    </div>
+</div>

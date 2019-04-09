@@ -1,0 +1,5 @@
+<input class="flex-parent" type="text" placeholder = "Text for search" [(ngModel)] ="_inputRemove"/>
+<button class="flex-parent" (click)="removeItem(_inputRemove)" (click)="DropHintRemove(_acceptRemove)">
+    Remove
+</button>
+<DropOutHintTransform (DropHintRemove)="DropHint($event)"></DropOutHintTransform>

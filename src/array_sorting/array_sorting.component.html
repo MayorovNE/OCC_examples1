@@ -1,0 +1,30 @@
+<div class="style1"><button (click)="goNavigation()"><span class="style5">On start page</span></button></div>
+<div class="class4">
+    <div class="class3">
+        <input class="class1" type="number" #userArray  name="input1" value=10>
+        <button (click)="Users_array()" >Okey</button>
+    </div>
+    <div class="class2">
+        <div class="class5">
+            <div>
+                <input #StringRadio type="radio">
+                <span>string</span>
+            </div>
+            <div>
+                <input #NumberRadio type="radio">
+                <span>number</span>
+            </div>
+        </div>
+    </div>
+</div>
+<div>
+    <span>User's array:</span>
+</div>
+<span>[</span><span *ngFor="let elem1 of Array1"> |{{elem1}}| </span><span>]</span>
+<div>
+    <button (click)="Sort()" (click)="QuickSort(ArrayForSort)">Sorting</button>
+</div>
+<div>
+    <span>Sorting array:</span>
+</div>
+<span>[</span><span *ngFor="let elem2 of ArrayForSort"> |{{elem2}}| </span><span>]</span>
